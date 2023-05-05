@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <style>
+        ul.pagination {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0;
+          padding: 0;
+          list-style: none;
+        }
+        li.page-item {
+          margin: 0 5px;
+        }
+        a.page-link {
+          display: inline-block;
+          padding: 5px 10px;
+          background-color: #c7ecee;
+          border: 1px solid #c7ecee;
+          color: #2c3e50;
+          text-decoration: none;
+          transition: all 0.3s ease-in-out;
+        }
+        a.page-link:hover,
+        a.page-link:focus {
+          background-color: #a9cce3;
+          border-color: #a9cce3;
+        }
+        a.page-link.disabled {
+          opacity: 0.5;
+          pointer-events: none;
+        }
+        .arrow {
+          display: inline-block;
+          margin: 0 5px;
+          width: 20px;
+          height: 20px;
+          background-color: #c7ecee;
+          border: 1px solid #c7ecee;
+          text-align: center;
+          line-height: 20px;
+          font-size: 12px;
+          color: #2c3e50;
+          cursor: pointer;
+          transition: all 0.3s ease-in-out;
+        }
+        .arrow:hover,
+        .arrow:focus {
+          background-color: #a9cce3;
+          border-color: #a9cce3;
+        }
+        .arrow.disabled {
+          opacity: 0.5;
+          pointer-events: none;
+        }
+        .arrow.left::before {
+          content: "<";
+        }
+        .arrow.right::before {
+          content: ">";
+        }
+      </style>
+</head>
+<body>
+    <ul class="pagination">
+        <li class="page-item arrow left disabled"></li>
+        <li class="page-item"><a href="#" class="page-link">1</a></li>
+        <li class="page-item"><a href="#" class="page-link">2</a></li>
+        <li class="page-item"><a href="#" class="page-link">3</a></li>
+        <li class="page-item"><a href="#" class="page-link">4</a></li>
+        <li class="page-item"><a href="#" class="page-link">5</a></li>
+        <li class="page-item arrow right"></li>
+      </ul>
+    
+</body>
+</html>
